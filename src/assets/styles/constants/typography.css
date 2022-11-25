@@ -1,0 +1,36 @@
+:root {
+  /* Font families. */
+  --font-family-primary: "Barlow Condensed", sans-serif;
+  --font-family-secondary: "Bellefair", serif;
+
+  /* Font sizes. */
+  --font-size-5xl: 9.375rem;
+  --font-size-4xl: 6.25rem;
+  --font-size-3xl: 5rem;
+  --font-size-2xl: 3.5rem;
+  --font-size-xl: 2.5rem;
+  --font-size-lg: 2rem;
+  --font-size-md: 1.75rem;
+  --font-size-sm: 1.5rem;
+  --font-size-xs: 1.25rem;
+  --font-size-2xs: 1rem;
+  --font-size-3xs: 0.9375rem;
+  --font-size-4xs: 1.125rem;
+  --font-size-5xs: 0.875rem;
+
+  /* letter spacing */
+  --letter-spacing-sm: 0.1437em;
+  --letter-spacing-md: 0.1688em;
+  --letter-spacing-lg: 0.2969em;
+
+
+  /* misc */
+  --line-height: 1.55;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height);
+}
