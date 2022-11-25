@@ -1,0 +1,20 @@
+:root {
+  --color-purple-400: hsl(231deg 77% 90%);
+  --color-black-400: hsl(230deg 35% 7%);
+  --color-white-400: hsl(0deg 0% 100%);
+  --color-white-translucent: hsl(0deg 0% 100% / 50%);
+
+  /* Navbar */
+  --color-navItem-counter: var(--color-white-400);
+  --color-navItem-border-active: var(--color-white-400);
+  --color-navItem-border-hover: var(--color-white-translucent);
+
+  /* Heading */
+  --color-heading-light: var(--color-white-400);
+  --color-heading-dark: var(--color-black-400);
+  --color-heading-accent: var(--color-purple-400);
+
+  /* Button */
+  --color-button-background: var(--color-white-400);
+  --color-button-text: var(--color-black-400);
+}
