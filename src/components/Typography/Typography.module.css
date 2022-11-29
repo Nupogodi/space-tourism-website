@@ -2,7 +2,7 @@
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
 
-  color: var(--color-Heading-light);
+  color: var(--color-heading-light);
 }
 
 /* Font family */
@@ -16,15 +16,15 @@
 
 /* Colors */
 .light {
-  color: var(--color-Heading-light);
+  color: var(--color-heading-light);
 }
 
 .dark {
-  color: var(--color-Heading-dark);
+  color: var(--color-heading-dark);
 }
 
 .accent {
-  color: var(--color-Heading-accent);
+  color: var(--color-heading-accent);
 }
 
 /* Presets */
@@ -81,7 +81,7 @@
   letter-spacing: var(--letter-spacing-sm);
   text-transform: uppercase;
 
-  color: var(--color-Heading-accent);
+  color: var(--color-heading-accent);
 }
 
 .navText {
@@ -97,7 +97,7 @@
   font-size: var(--font-size-3xs);
   font-weight: var(--font-weight-regular);
 
-  color: var(--color-Heading-accent);
+  color: var(--color-heading-accent);
 }
 
 /* Utilities */

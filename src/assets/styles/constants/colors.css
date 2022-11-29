@@ -16,5 +16,6 @@
 
   /* Button */
   --color-button-background: var(--color-white-400);
+  --color-button-background-hover: var(--color-white-400);
   --color-button-text: var(--color-black-400);
 }

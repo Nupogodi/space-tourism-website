@@ -14,11 +14,10 @@
   line-height: var(--line-height);
   text-transform: uppercase;
 
-  color: var(--color-Button-text-primary-default);
+  color: var(--color-button-text);
   border: none;
   border-radius: 50%;
-  background-color: transparent;
-  background-color: var(--color-Button-background-color-primary-default);
+  background-color: var(--color-button-background);
 
   cursor: pointer;
 }
@@ -34,7 +33,7 @@
 
   opacity: 0;
   border-radius: 50%;
-  background-color: var(--color-Button-background-color-primary-default);
+  background-color: var(--color-button-background-hover);
 
   transition: opacity 0.5s ease;
   transform: translate(-50%, -50%);
@@ -60,20 +59,11 @@
   margin: 0 auto;
 }
 
-.disabled,
-.disabled:hover {
-  background-color: var(--clr-grey-400);
-
-  cursor: default;
-}
-
 @media (min-width: 768px) {
-
   .btn {
     --font-size-Button: var(--font-size-lg);
     width: 242px;
     height: 242px;
-    
   }
 }
 

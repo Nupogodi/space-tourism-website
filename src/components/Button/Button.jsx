@@ -10,7 +10,6 @@ const cx = classNames.bind(styles);
 export const Button = ({
   children,
   centered,
-  disabled,
   bgColor,
   onClick,
   type = 'button',
@@ -21,18 +20,12 @@ export const Button = ({
     btn: styled === 'button',
     wrapper: styled === 'wrapper',
     [bgColor]: true,
-    disabled,
     centered,
     className,
   });
 
   return (
-    <button
-      className={classNameList}
-      onClick={onClick}
-      disabled={disabled}
-      type={type}
-    >
+    <button className={classNameList} onClick={onClick} type={type}>
       {children}
     </button>
   );
@@ -42,14 +35,12 @@ Button.propTypes = {
   centered: PropTypes.bool,
   bgColor: PropTypes.string,
   onClick: PropTypes.func.isRequired,
-  disabled: PropTypes.bool,
   type: PropTypes.string,
   styled: PropTypes.string,
 };
 
 Button.defaultProps = {
   centered: false,
-  disabled: false,
   type: 'button',
   styled: 'button',
   bgColor: 'light',
