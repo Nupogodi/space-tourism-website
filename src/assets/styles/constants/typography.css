@@ -1,7 +1,7 @@
 :root {
   /* Font families. */
-  --font-family-primary: "Barlow Condensed", sans-serif;
-  --font-family-secondary: "Bellefair", serif;
+  --font-family-primary: 'Barlow Condensed', sans-serif;
+  --font-family-secondary: 'Bellefair', serif;
 
   /* Font sizes. */
   --font-size-5xl: 9.375rem;
@@ -22,7 +22,6 @@
   --letter-spacing-sm: 0.1437em;
   --letter-spacing-md: 0.1688em;
   --letter-spacing-lg: 0.2969em;
-
 
   /* misc */
   --line-height: 1.55;
