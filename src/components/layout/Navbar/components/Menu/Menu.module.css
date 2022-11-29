@@ -44,11 +44,11 @@
 }
 
 .item.active {
-  border-bottom: 3px solid var(--color-NavItem-border-active);
+  border-bottom: 3px solid var(--color-navItem-border-active);
 }
 
 .hoverOn:hover {
-  border-bottom: 3px solid var(--color-NavItem-border-hover);
+  border-bottom: 3px solid var(--color-navItem-border-hover);
 }
 
 .counter {
@@ -66,9 +66,9 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-2xs);
   font-family: var(--font-family-primary);
-  letter-spacing: var(--leter-spacing-md);
+  letter-spacing: var(--letter-spacing-md);
 
-  color: var(--color-NavItem-counter);
+  color: var(--color-navItem-counter);
 }
 
 @media (min-width: 1440px) {
