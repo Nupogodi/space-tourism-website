@@ -30,7 +30,7 @@ export function Menu({
     <ol className={className}>
       {Object.values(ROUTES).map((value) => (
         <li
-          className={`${styles.item} ${hoverOn && styles.hoverOn} ${
+          key={value.url} className={`${styles.item} ${hoverOn && styles.hoverOn} ${
             showCounter && styles.counter
           }`}
         >
