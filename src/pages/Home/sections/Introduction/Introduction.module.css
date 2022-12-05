@@ -1,9 +1,20 @@
 .introduction {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: var(--sizing-100);
 }
 
 .textContainer {
   text-align: center;
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    justify-content: space-between;
+  }
+
+  .textContainer {
+  }
 }

@@ -10,14 +10,14 @@ import { Introduction } from './sections/Introduction/Introduction';
 import styles from './Home.module.css';
 
 export const Home = () => (
-    <div className={styles.home}>
-      <header className={styles.header}>
-        <Navbar />
-      </header>
-      <div className='container padded'>
-        <main>
-          <Introduction />
-        </main>
+  <div className={styles.home}>
+    <header className={styles.header}>
+      <Navbar />
+    </header>
+    <main className={styles.main}>
+      <div className={`container padded ${styles.container}`}>
+        <Introduction />
       </div>
-    </div>
-  )
+    </main>
+  </div>
+);
