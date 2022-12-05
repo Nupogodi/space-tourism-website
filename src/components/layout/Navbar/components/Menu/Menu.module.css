@@ -19,27 +19,29 @@
 }
 
 .desktopView::after {
-  content: '';
-
-  width: 100vw;
-  height: 100%;
-
   position: absolute;
   left: 0;
   z-index: -1;
 
+  width: 100vw;
+  height: 100%;
+
   background-color: rgb(228 228 228 / 15%);
   box-shadow: 0 10px 15px 10px rgb(0 0 0 / 15%);
+
+  content: "";
   backdrop-filter: blur(8px); /* Safari 9+ */
 }
 
 .menu {
   list-style: none;
+
   counter-reset: menu;
 }
 
 .item {
   border-bottom: 3px solid transparent;
+
   transition: border 0.3s ease;
 }
 
@@ -52,23 +54,24 @@
 }
 
 .counter {
-  counter-increment: menu;
   position: relative;
 
   display: flex;
-  gap: var(--sizing-10);
-
   align-items: center;
+
+  counter-increment: menu;
+  gap: var(--sizing-10);
 }
 
 .counter::before {
-  content: '0' counter(menu);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-2xs);
   font-family: var(--font-family-primary);
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-md);
 
   color: var(--color-navItem-counter);
+
+  content: "0" counter(menu);
 }
 
 @media (min-width: 1440px) {
