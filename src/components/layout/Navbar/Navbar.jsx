@@ -33,7 +33,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav aria-labelledby='site-navigation' className={styles.nav}>
       <NavLink to={ROUTES.home.url}>
         <Logo className={styles.logo} />
       </NavLink>
