@@ -1,7 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+// constants
+import { ROUTES } from 'utils/constants';
 
 // components
-import { Button, Typography } from 'components';
+import { Typography } from 'components';
 
 // styles
 import styles from './Introduction.module.css';
@@ -23,9 +27,11 @@ export const Introduction = () => (
       </Typography>
     </div>
     <div>
-      <Button onClick={() => {}} centered>
-        Explore
-      </Button>
+      <NavLink className={styles.navButton} to={ROUTES.destination.url}>
+        <Typography color='dark' preset='heading5'>
+          Explore
+        </Typography>
+      </NavLink>
     </div>
   </section>
 );

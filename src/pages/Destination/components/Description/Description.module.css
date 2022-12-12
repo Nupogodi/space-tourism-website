@@ -1,0 +1,10 @@
+.description {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .description {
+    max-width: 85ch;
+  }
+}

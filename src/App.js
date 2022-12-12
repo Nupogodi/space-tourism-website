@@ -1,21 +1,44 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import classNames from 'classnames/bind';
 
 // constants
 import { ROUTES } from 'utils/constants';
 
-// Pages
-import { Home } from 'pages';
+// components
+import { Navbar } from 'components';
 
 // styles
 import 'assets/styles/main.css';
+import styles from './App.module.css';
 
-const App = () => (
-    <div className='App'>
-      <Routes>
-        <Route path={ROUTES.home.url} element={<Home />} />
-      </Routes>
+const cx = classNames.bind(styles);
+
+const App = () => {
+  const location = useLocation().pathname;
+
+  const className = cx({
+    home: location === ROUTES.home.url,
+    destination: location === ROUTES.destination.url,
+    App: true,
+  });
+
+  return (
+    <div className={className}>
+      <header className={styles.header}>
+        <Navbar />
+      </header>
+      <main className={` ${styles.main}`}>
+        <div className='container paddedInline fullHeight'>
+          <Routes>
+            {Object.values(ROUTES).map((value) => (
+              <Route key={value.url} path={value.url} element={value.element} />
+            ))}
+          </Routes>
+        </div>
+      </main>
     </div>
-  )
+  );
+};
 
 export default App;

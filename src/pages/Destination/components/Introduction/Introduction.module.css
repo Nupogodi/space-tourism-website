@@ -1,0 +1,18 @@
+.prefix::before {
+  content: '01';
+  font-family: inherit;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  font-size: inherit;
+  letter-spacing: var(letter-spacing-2);
+
+  opacity: 0.25;
+
+  margin-right: var(--sizing-20);
+}
+
+@media (min-width: 768px) {
+  .prefix {
+    text-align: start;
+  }
+}
