@@ -17,12 +17,13 @@
 
 .fullHeight {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
 }
 
 .divider {
   width: 100%;
   height: 1px;
+
   background: #383b4b;
 }

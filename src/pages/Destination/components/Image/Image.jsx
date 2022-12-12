@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 // styles
 import styles from './Image.module.css';
 
-export function Image({ image = null }) {
-  return (
+export const Image = ({ image = null }) => (
     <div className={styles.image}>
       <img src={image.src} alt={image.alt} />
     </div>
-  );
-}
+  )
 
 Image.propTypes = {
   image: PropTypes.shape({

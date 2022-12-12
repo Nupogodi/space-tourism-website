@@ -8,8 +8,7 @@ import { DESTINATIONS } from '../../destinations';
 // styles
 import styles from './Menu.module.css';
 
-export function Menu({ onClick, activeTabID }) {
-  return (
+export const Menu = ({ onClick, activeTabID }) => (
     <nav aria-labelledby='page-navigation'>
       <ul className={styles.menu}>
         {Object.values(DESTINATIONS).map((destination) => (
@@ -26,5 +25,4 @@ export function Menu({ onClick, activeTabID }) {
         ))}
       </ul>
     </nav>
-  );
-}
+  )

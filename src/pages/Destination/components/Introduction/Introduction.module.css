@@ -1,14 +1,15 @@
 .prefix::before {
-  content: '01';
+  margin-right: var(--sizing-20);
+
   font-family: inherit;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
   font-size: inherit;
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
   letter-spacing: var(letter-spacing-2);
 
   opacity: 0.25;
 
-  margin-right: var(--sizing-20);
+  content: "01";
 }
 
 @media (min-width: 768px) {

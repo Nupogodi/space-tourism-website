@@ -6,6 +6,7 @@
 
 .item {
   padding-block: var(--sizing-10);
+
   border-bottom: 3px solid transparent;
 
   transition: border 0.3s ease-in-out;

@@ -14,12 +14,12 @@ import styles from './Menu.module.css';
 
 const cx = classNames.bind(styles);
 
-export function Menu({
+export const Menu = ({
   view = 'mobile',
   showCounter = false,
   paddedItems = false,
   hoverOn = false,
-}) {
+}) => {
   const location = useLocation();
 
   const [currentPath, setCurrentPath] = useState(location.pathname);

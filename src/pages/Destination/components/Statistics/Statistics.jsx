@@ -7,8 +7,7 @@ import { Typography } from 'components';
 // styles
 import styles from './Statistics.module.css';
 
-export function Statistics({ distance, travelTime }) {
-  return (
+export const Statistics = ({ distance, travelTime }) => (
       <ul className={styles.statistics}>
         <li className={styles.stat}>
           <Typography tag='p' preset='subHeading2'>
@@ -27,8 +26,7 @@ export function Statistics({ distance, travelTime }) {
           </Typography>
         </li>
       </ul>
-  );
-}
+  )
 
 Statistics.propTypes = {
   distance: PropTypes.string.isRequired,

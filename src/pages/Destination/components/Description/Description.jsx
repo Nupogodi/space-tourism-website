@@ -9,8 +9,7 @@ import { DESTINATIONS } from '../../destinations';
 // styles
 import styles from './Description.module.css';
 
-export function Description({ description, title }) {
-  return (
+export const Description = ({ description, title }) => (
     <section className={styles.description}>
       <Typography tag='h2' preset='heading2'>
         {title}
@@ -19,8 +18,7 @@ export function Description({ description, title }) {
         {description}
       </Typography>
     </section>
-  );
-}
+  )
 
 Description.propTypes = {
   description: PropTypes.string.isRequired,
