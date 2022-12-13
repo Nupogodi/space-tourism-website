@@ -1,12 +1,6 @@
 .btn {
   --font-size-Button: var(--font-size-xs);
 
-  position: relative;
-  z-index: 0;
-  padding: var(--sizing-50);
-  width: 150px;
-  height: 150px;
-
   display: block;
 
   font-family: var(--font-family-secondary);
@@ -16,41 +10,16 @@
 
   color: var(--color-button-text);
   border: none;
-  border-radius: 50%;
   background-color: var(--color-button-background);
 
   cursor: pointer;
 }
 
-.btn::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-
-  width: 150%;
-  height: 150%;
-
-  opacity: 0;
-  border-radius: 50%;
-  background-color: var(--color-button-background-hover);
-
-  transition: opacity 0.5s ease;
-  transform: translate(-50%, -50%);
-
-  content: '';
-}
-
-.btn:hover::after {
-  opacity: 0.1;
-}
-
 .wrapper {
   text-align: inherit;
 
-  border: inherit;
-  border-radius: inherit;
-  background-color: inherit;
+  border: none;
+  background: transparent;
 
   cursor: pointer;
 }

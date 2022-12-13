@@ -41,6 +41,10 @@
 }
 
 @media (min-width: 1440px) {
+  .nav {
+    margin-top: var(--sizing-90);
+  }
+
   .divider {
     display: block;
   }

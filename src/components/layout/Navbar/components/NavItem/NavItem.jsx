@@ -8,7 +8,7 @@ import { Typography } from 'components';
 import styles from './NavItem.module.css';
 
 export const NavItem = ({ title, padded = false }) => (
-  <div className={padded && styles.padded}>
+  <div className={padded ? styles.padded : undefined}>
     <Typography tag='p' preset='navText'>
       {title}
     </Typography>

@@ -1,8 +1,5 @@
 import React from 'react';
 
-// components
-import { Navbar } from 'components';
-
 // sections
 import { Introduction } from './sections/Introduction/Introduction';
 
@@ -10,14 +7,9 @@ import { Introduction } from './sections/Introduction/Introduction';
 import styles from './Home.module.css';
 
 export const Home = () => (
-    <div className={styles.home}>
-      <header className={styles.header}>
-        <Navbar />
-      </header>
-      <div className='container padded'>
-        <main>
-          <Introduction />
-        </main>
-      </div>
+  <div className={styles.home}>
+    <div className={styles.container}>
+      <Introduction />
     </div>
-  )
+  </div>
+);

@@ -1,0 +1,45 @@
+.App {
+  position: relative;
+
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.home {
+  background-image: url("./assets/images/home/background-home-mobile.jpg");
+}
+
+.destination {
+  background-image: url("./assets/images/destination/background-destination-mobile.jpg");
+}
+
+@media (min-width: 768px) {
+  .home {
+    background-image: url("./assets/images/home/background-home-tablet.jpg");
+  }
+
+  .destination {
+    background-image: url("./assets/images/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+    background-image: url("./assets/images/home/background-home-desktop.jpg");
+  }
+
+  .destination {
+    background-image: url("./assets/images/destination/background-destination-desktop.jpg");
+  }
+}

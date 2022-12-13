@@ -16,15 +16,15 @@
 
 /* Colors */
 .light {
-  color: var(--color-heading-light);
+  color: var(--color-typography-light);
 }
 
 .dark {
-  color: var(--color-heading-dark);
+  color: var(--color-typography-dark);
 }
 
 .accent {
-  color: var(--color-heading-accent);
+  color: var(--color-typography-accent);
 }
 
 /* Presets */
@@ -60,7 +60,7 @@
 }
 
 .heading5 {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary);
   font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-md);
@@ -94,7 +94,7 @@
 
 .text {
   font-family: var(--font-family-primary);
-  font-size: var(--font-size-3xs);
+  font-size: var(--font-size-2xs);
   font-weight: var(--font-weight-regular);
 
   color: var(--color-heading-accent);
@@ -131,14 +131,10 @@
   }
 
   .heading5 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
   }
 
   .navText {
-    font-size: var(--font-size-2xs);
-  }
-
-  .bodyText {
     font-size: var(--font-size-2xs);
   }
 }
@@ -160,7 +156,7 @@
     font-size: var(--font-size-md);
   }
 
-  .bodyText {
+  .text {
     font-size: var(--font-size-xs);
   }
 }

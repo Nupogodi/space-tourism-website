@@ -1,0 +1,51 @@
+.destination {
+  position: relative;
+
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.introduction,
+.body,
+.content {
+  gap: var(--sizing-60);
+}
+
+.description {
+  margin-bottom: var(--sizing-60);
+}
+
+@media (min-width: 768px) {
+  .destination {
+    padding-block: var(--page-padding);
+  }
+
+  .content {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1440px) {
+  .destination {
+    text-align: start;
+  }
+
+  .body {
+    flex-direction: row;
+    column-gap: var(--sizing-200);
+  }
+
+  .content {
+    justify-content: start;
+  }
+
+  .content,
+  .image {
+    align-self: center;
+  }
+}

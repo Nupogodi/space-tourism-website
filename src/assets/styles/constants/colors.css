@@ -14,8 +14,13 @@
   --color-heading-dark: var(--color-black-400);
   --color-heading-accent: var(--color-purple-400);
 
-  /* Button */
-  --color-button-background: var(--color-white-400);
-  --color-button-background-hover: var(--color-white-400);
-  --color-button-text: var(--color-black-400);
+  /* navButton */
+  --color-navButton-background: var(--color-white-400);
+  --color-navButton-background-hover: var(--color-white-400);
+  --color-navButton-text: var(--color-black-400);
+
+  /* Typography */
+  --color-typography-light: var(--color-white-400);
+  --color-typography-dark: var(--color-black-400);
+  --color-typography-accent: var(--color-purple-400);
 }

@@ -1,25 +1,14 @@
-.home {
-  position: relative;
-
+.home,
+.container {
   display: flex;
-  overflow: hidden;
+  flex: 1;
   flex-direction: column;
-  min-height: 100vh;
+}
 
-  background: url("../../assets/images/home/background-home-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.home {
   gap: var(--sizing-100);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 1440px) {
-  .home {
-    padding-top: var(--sizing-80);
-  }
+.container {
+  padding-top: var(--page-padding);
 }
