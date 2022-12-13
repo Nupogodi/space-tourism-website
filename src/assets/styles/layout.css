@@ -21,6 +21,12 @@
   flex-direction: column;
 }
 
+.flexLayout {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .divider {
   width: 100%;
   height: 1px;
