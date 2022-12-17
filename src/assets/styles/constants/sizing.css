@@ -13,10 +13,12 @@
   --page-padding: var(--sizing-40);
   --page-spacing: var(--sizing-40);
   --page-container: 1100px;
+  --text-container: 45ch;
 }
 
 @media (min-width: 768px) {
   :root {
     --page-padding: var(--sizing-80);
+    --text-container: 65ch;
   }
 }

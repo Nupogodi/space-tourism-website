@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 // components
-import { Typography } from 'components';
 import {
   Statistics,
   Introduction,

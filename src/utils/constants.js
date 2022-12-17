@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Destination } from 'pages';
+import { Home, Destination, Crew } from 'pages';
 
 export const ROUTES = {
   home: {
@@ -15,7 +15,7 @@ export const ROUTES = {
   crew: {
     title: 'Crew',
     url: '/crew',
-    element: null,
+    element: <Crew />,
   },
   technology: {
     title: 'Technology',

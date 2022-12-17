@@ -1,6 +1,14 @@
+.container,
+.textContainer {
+  margin-inline: auto;
+}
+
 .container {
   max-width: var(--page-container);
-  margin-inline: auto;
+}
+
+.textContainer {
+  max-width: var(--text-container);
 }
 
 .padded {

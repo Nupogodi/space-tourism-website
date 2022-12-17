@@ -20,6 +20,7 @@ const App = () => {
   const className = cx({
     home: location === ROUTES.home.url,
     destination: location === ROUTES.destination.url,
+    crew: location === ROUTES.crew.url,
     App: true,
   });
 
@@ -28,7 +29,7 @@ const App = () => {
       <header className={styles.header}>
         <Navbar />
       </header>
-      <main className={` ${styles.main}`}>
+      <main className={styles.main}>
         <div className='container paddedInline fullHeight'>
           <Routes>
             {Object.values(ROUTES).map((value) => (

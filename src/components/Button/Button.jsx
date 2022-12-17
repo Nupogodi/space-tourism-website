@@ -21,7 +21,7 @@ export const Button = ({
     wrapper: styled === 'wrapper',
     [bgColor]: true,
     centered,
-    className,
+    [className]: className,
   });
 
   return (

@@ -8,12 +8,12 @@ import { Typography } from 'components';
 import styles from './Introduction.module.css';
 
 export const Introduction = () => (
-    <div>
-      <Typography className={styles.prefix} tag='h1' preset='heading5'>
-        Pick your destination
-      </Typography>
-    </div>
-  )
+  <div>
+    <Typography className={styles.prefix} tag='h1' preset='heading5'>
+      Meet your crew
+    </Typography>
+  </div>
+);
 
 Introduction.propTypes = {};
 

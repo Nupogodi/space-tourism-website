@@ -1,0 +1,9 @@
+.name {
+  margin-block-end: var(--sizing-20);
+}
+
+@media (min-width: 1440px) {
+  .name {
+    margin-block-end: var(--sizing-30);
+  }
+}
