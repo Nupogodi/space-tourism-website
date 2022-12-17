@@ -23,7 +23,7 @@
   padding-inline: var(--page-padding);
 }
 
-.fullHeight {
+.flexFlow {
   display: flex;
   flex: 1;
   flex-direction: column;

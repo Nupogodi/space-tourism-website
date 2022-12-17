@@ -30,7 +30,7 @@ const App = () => {
         <Navbar />
       </header>
       <main className={styles.main}>
-        <div className='container paddedInline fullHeight'>
+        <div className='container paddedInline flexFlow'>
           <Routes>
             {Object.values(ROUTES).map((value) => (
               <Route key={value.url} path={value.url} element={value.element} />

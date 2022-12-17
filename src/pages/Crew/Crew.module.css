@@ -1,8 +1,4 @@
 .crew {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-
   text-align: center;
 }
 
@@ -41,7 +37,7 @@
 
   transform: translateX(50%);
 
-  content: "";
+  content: '';
 }
 
 @media (min-width: 768px) {
@@ -54,7 +50,7 @@
   }
 
   .image::after {
-    display: none;
+    content: none;
   }
 
   .slider {

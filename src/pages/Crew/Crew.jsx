@@ -15,8 +15,8 @@ export function Crew() {
   const { name, image, role, description } = activeMember;
 
   return (
-    <div className={styles.crew}> 
-      <div className={styles.information}>
+    <div className={`flexFlow ${styles.crew}`}>
+      <section className={styles.information}>
         <div className={styles.introduction}>
           <Introduction />
         </div>
@@ -29,7 +29,7 @@ export function Crew() {
         <div className={styles.text}>
           <Information role={role} name={name} description={description} />
         </div>
-      </div>
+      </section>
     </div>
   );
 }
