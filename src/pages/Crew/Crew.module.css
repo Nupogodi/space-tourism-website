@@ -1,13 +1,14 @@
 .crew {
-  text-align: center;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
+
+  text-align: center;
 }
 
 .information {
-  flex: 1;
   display: grid;
+  flex: 1;
   grid-template-columns: 1fr;
   grid-template-rows: auto 225px auto 1fr;
   gap: var(--sizing-60);
@@ -16,28 +17,31 @@
 .image {
   position: relative;
   margin-inline: auto;
+
   display: flex;
   justify-content: center;
 }
 
 .slider {
   display: flex;
-  justify-content: center;
   align-self: center;
+  justify-content: center;
 }
 
 .image::after {
   position: absolute;
-  bottom: 0;
   right: 50%;
-  transform: translateX(50%);
-  content: '';
+  bottom: 0;
+  margin: 0 auto;
+
   width: 327px;
   height: 1px;
 
-  margin: 0 auto;
-
   background: #383b4b;
+
+  transform: translateX(50%);
+
+  content: "";
 }
 
 @media (min-width: 768px) {
@@ -81,6 +85,7 @@
   .image {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+
     align-self: flex-end;
   }
 
