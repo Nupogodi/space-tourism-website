@@ -21,6 +21,7 @@ const App = () => {
     home: location === ROUTES.home.url,
     destination: location === ROUTES.destination.url,
     crew: location === ROUTES.crew.url,
+    technology: location === ROUTES.technology.url,
     App: true,
   });
 

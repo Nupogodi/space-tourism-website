@@ -10,15 +10,15 @@ import { DESTINATIONS } from '../../destinations';
 import styles from './Description.module.css';
 
 export const Description = ({ description, title }) => (
-    <section className={styles.description}>
-      <Typography tag='h2' preset='heading2'>
-        {title}
-      </Typography>
-      <Typography tag='p' preset='text'>
-        {description}
-      </Typography>
-    </section>
-  )
+  <section className={styles.description}>
+    <Typography tag='h2' preset='heading2'>
+      {title}
+    </Typography>
+    <Typography tag='p' preset='text'>
+      {description}
+    </Typography>
+  </section>
+);
 
 Description.propTypes = {
   description: PropTypes.string.isRequired,

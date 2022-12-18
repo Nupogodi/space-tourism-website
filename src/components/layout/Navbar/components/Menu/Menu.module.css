@@ -29,14 +29,14 @@
   background-color: rgb(228 228 228 / 15%);
   box-shadow: 0 10px 15px 10px rgb(0 0 0 / 15%);
 
-  content: "";
+  content: '';
   backdrop-filter: blur(8px); /* Safari 9+ */
 }
 
 .menu {
   list-style: none;
 
-  counter-reset: menu;
+  counter-reset: menu -1;
 }
 
 .item {
@@ -71,7 +71,7 @@
 
   color: var(--color-navItem-counter);
 
-  content: "0" counter(menu);
+  content: counter(menu, decimal-leading-zero);
 }
 
 @media (min-width: 1440px) {

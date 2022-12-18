@@ -15,10 +15,10 @@ export function Crew() {
   const { name, image, role, description } = activeMember;
 
   return (
-    <div className={styles.crew}> 
+    <div className={styles.crew}>
       <div className={styles.information}>
         <div className={styles.introduction}>
-          <Introduction />
+          <Introduction text='Meet your crew' prefix='02' />
         </div>
         <div className={styles.image}>
           <Image src={image.src} alt={image.alt} />
