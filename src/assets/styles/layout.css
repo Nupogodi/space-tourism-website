@@ -1,6 +1,14 @@
+.container,
+.textContainer {
+  margin-inline: auto;
+}
+
 .container {
   max-width: var(--page-container);
-  margin-inline: auto;
+}
+
+.textContainer {
+  max-width: var(--text-container);
 }
 
 .padded {
@@ -15,7 +23,7 @@
   padding-inline: var(--page-padding);
 }
 
-.fullHeight {
+.flexFlow {
   display: flex;
   flex: 1;
   flex-direction: column;

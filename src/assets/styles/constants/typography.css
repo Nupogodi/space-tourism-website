@@ -24,7 +24,7 @@
   --letter-spacing-lg: 0.2969em;
 
   /* misc */
-  --line-height: 1.55;
+  --line-height: 1.67;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -32,4 +32,16 @@
 body {
   font-family: var(--font-family-primary);
   line-height: var(--line-height);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --line-height: 1.75;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --line-height: 1.8;
+  }
 }

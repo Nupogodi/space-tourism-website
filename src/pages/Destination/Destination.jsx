@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // components
-import { Typography } from 'components';
 import {
   Statistics,
   Introduction,
   Description,
   Menu,
   Image,
-} from './components';
+} from "./components";
 
 // constants
-import { DESTINATIONS } from './destinations';
+import { DESTINATIONS } from "./destinationConstants";
 
 // styles
-import styles from './Destination.module.css';
+import styles from "./Destination.module.css";
 
 export const Destination = () => {
   const [selectedDestination, setSelectedDestination] = useState(

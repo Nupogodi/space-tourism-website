@@ -1,3 +1,3 @@
-export { Home } from './Home/Home';
-export { Destination } from './Destination/Destination';
-// export { Introduction } from '';
+export { Home } from "./Home/Home";
+export { Crew } from "./Crew/Crew.jsx";
+export { Destination } from "./Destination/Destination";

@@ -1,0 +1,38 @@
+.slider {
+  display: flex;
+  gap: var(--sizing-20);
+}
+
+.slide {
+  display: flex;
+}
+
+.btn {
+  width: 10px;
+  height: 10px;
+
+  opacity: 0.17;
+  border-radius: 50%;
+  background-color: var(--color-white-400);
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.35;
+}
+
+.btn.active {
+  opacity: 1;
+}
+
+@media (min-width: 1440px) {
+  .slider {
+    gap: var(--sizing-40);
+  }
+
+  .btn {
+    width: 15px;
+    height: 15px;
+  }
+}
