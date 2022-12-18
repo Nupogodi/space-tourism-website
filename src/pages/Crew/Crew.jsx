@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // components
-import { Image, Information, Introduction, SliderMenu } from './components';
+import { Image, Information, Introduction, SliderMenu } from "./components";
 
 // constants
-import { CREW_MEMBERS } from './crewInfo';
+import { CREW_MEMBERS } from "./crewConstants";
 
 // styles
-import styles from './Crew.module.css';
+import styles from "./Crew.module.css";
 
 export function Crew() {
   const [activeMember, setActiveMember] = useState(CREW_MEMBERS.mark);
 
-  const { name, image, role, description } = activeMember;
+  const { name, image, role, description, id } = activeMember;
 
   return (
     <div className={`flexFlow ${styles.crew}`}>
@@ -24,7 +24,7 @@ export function Crew() {
           <Image src={image.src} alt={image.alt} />
         </div>
         <div className={styles.slider}>
-          <SliderMenu onClick={setActiveMember} activeMember={activeMember} />
+          <SliderMenu onClick={setActiveMember} activeMemberID={id} />
         </div>
         <div className={styles.text}>
           <Information role={role} name={name} description={description} />
