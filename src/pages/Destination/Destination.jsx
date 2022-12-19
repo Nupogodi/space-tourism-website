@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 
 // components
-import {
-  Statistics,
-  Introduction,
-  Description,
-  Menu,
-  Image,
-} from "./components";
+import { Introduction } from "pages";
+import { Statistics, Description, Menu, Image } from "./components";
 
 // constants
 import { DESTINATIONS } from "./destinationConstants";
@@ -24,10 +19,10 @@ export const Destination = () => {
     selectedDestination;
 
   return (
-    <div className={`flexLayout ${styles.destination}`}>
-      <section className={`flexLayout ${styles.introduction}`}>
-        <Introduction />
-        <div className={`${styles.body}`}>
+    <div className={styles.destination}>
+      <section className={styles.introduction}>
+        <Introduction text='Pick your destination' prefix='01' />
+        <div className={styles.body}>
           <div className={styles.image}>
             <Image image={image} />
           </div>

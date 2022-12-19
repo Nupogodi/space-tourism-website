@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 // components
-import { Image, Information, Introduction, SliderMenu } from "./components";
+import { Introduction } from "pages";
+import { Image, Information, SliderMenu } from "./components";
 
 // constants
 import { CREW_MEMBERS } from "./crewConstants";
@@ -18,7 +19,7 @@ export function Crew() {
     <div className={`flexFlow ${styles.crew}`}>
       <section className={styles.information}>
         <div className={styles.introduction}>
-          <Introduction />
+          <Introduction text='Meet your crew' prefix='02' />
         </div>
         <div className={styles.image}>
           <Image src={image.src} alt={image.alt} />
