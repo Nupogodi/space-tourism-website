@@ -4,10 +4,7 @@
   text-align: center;
 }
 
-.destination,
-.introduction,
-.body,
-.content {
+.body {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -16,7 +13,11 @@
 .introduction,
 .body,
 .content {
-  gap: var(--sizing-40);
+  gap: var(--sizing-60);
+}
+
+.description {
+  margin-bottom: var(--sizing-60);
 }
 
 @media (min-width: 768px) {
@@ -25,11 +26,11 @@
   }
 
   .content {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .destination {
     text-align: start;
   }

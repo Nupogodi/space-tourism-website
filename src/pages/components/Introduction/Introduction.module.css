@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: var(--sizing-40);
+}
+
+.prefix {
+  font-weight: var(--font-weight-bold);
+
+  opacity: 0.25;
+}

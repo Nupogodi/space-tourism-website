@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 
 // components
-import {
-  Statistics,
-  Introduction,
-  Description,
-  Menu,
-  Image,
-} from "./components";
+import { Introduction } from "pages";
+import { Statistics, Description, Menu, Image } from "./components";
 
 // constants
 import { DESTINATIONS } from "./destinationConstants";
@@ -26,14 +21,16 @@ export const Destination = () => {
   return (
     <div className={styles.destination}>
       <section className={styles.introduction}>
-        <Introduction />
+        <Introduction text='Pick your destination' prefix='01' />
         <div className={styles.body}>
           <div className={styles.image}>
             <Image image={image} />
           </div>
-          <div className={styles.content}>
+          <div className={`flexLayout ${styles.content}`}>
             <Menu activeTabID={id} onClick={setSelectedDestination} />
-            <Description description={description} title={title} />
+            <div className={styles.description}>
+              <Description description={description} title={title} />
+            </div>
             <div className='divider' />
             <div className={styles.statistics}>
               <Statistics distance={distance} travelTime={travelTime} />
