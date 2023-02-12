@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 // constants
 import { ROUTES } from "utils/constants";
@@ -22,6 +22,11 @@ import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMobileDrawerOpen(false);
+  }, [location]);
 
   const [isTablet, isDesktop] = useMatchMedia([
     "(min-width: 768px)",
