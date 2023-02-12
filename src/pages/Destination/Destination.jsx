@@ -21,7 +21,9 @@ export const Destination = () => {
   return (
     <div className={styles.destination}>
       <section className={styles.introduction}>
-        <Introduction text='Pick your destination' prefix='01' />
+        <div className={styles.marginBottom}>
+          <Introduction text='Pick your destination' prefix='01' />
+        </div>
         <div className={styles.body}>
           <div className={styles.image}>
             <Image image={image} />

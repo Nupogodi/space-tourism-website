@@ -20,6 +20,10 @@
   margin-bottom: var(--sizing-60);
 }
 
+.marginBottom {
+  margin-bottom: var(--sizing-60);
+}
+
 @media (min-width: 768px) {
   .destination {
     padding-block: var(--page-padding);
