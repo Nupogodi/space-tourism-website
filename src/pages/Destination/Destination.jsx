@@ -19,10 +19,10 @@ export const Destination = () => {
     selectedDestination;
 
   return (
-    <div className={`flexLayout ${styles.destination}`}>
-      <section className={`flexLayout ${styles.introduction}`}>
+    <div className={styles.destination}>
+      <section className={styles.introduction}>
         <Introduction text='Pick your destination' prefix='01' />
-        <div className={`${styles.body}`}>
+        <div className={styles.body}>
           <div className={styles.image}>
             <Image image={image} />
           </div>
