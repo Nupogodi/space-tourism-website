@@ -15,6 +15,7 @@ import {
   Button,
   DesktopView,
   MobileView,
+  OutsideClickDetector,
 } from "components";
 
 // styles
@@ -54,7 +55,11 @@ export const Navbar = () => {
               {mobileDrawerOpen ? <Close /> : <Hamburger />}
             </Button>
           </div>
-          <MobileView mobileDrawerOpen={mobileDrawerOpen} />
+          <OutsideClickDetector
+            outsideClickAction={() => setMobileDrawerOpen(false)}
+          >
+            <MobileView mobileDrawerOpen={mobileDrawerOpen} />
+          </OutsideClickDetector>
         </div>
       )}
     </nav>
