@@ -1,9 +1,14 @@
 .container {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
 }
 
 .image {
   object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-end;
+  }
 }
