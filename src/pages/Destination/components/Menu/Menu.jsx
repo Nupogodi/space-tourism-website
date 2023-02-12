@@ -30,5 +30,5 @@ export const Menu = ({ onClick, activeTabID }) => (
 
 Menu.propTypes = {
   onClick: PropTypes.func.isRequired,
-  activeTabID: PropTypes.string.isRequired,
+  activeTabID: PropTypes.number.isRequired,
 };

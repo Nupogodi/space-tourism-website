@@ -2,9 +2,11 @@
 
 # dependencies
 /node_modules
+/.fttemplates
 /.pnp
 .pnp.js
 .vscode
+.quokka
 
 # testing
 /coverage

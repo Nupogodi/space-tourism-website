@@ -36,7 +36,7 @@
 .menu {
   list-style: none;
 
-  counter-reset: menu;
+  counter-reset: menu -1;
 }
 
 .item {
@@ -71,10 +71,10 @@
 
   color: var(--color-navItem-counter);
 
-  content: "0" counter(menu);
+  content: counter(menu, decimal-leading-zero);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .desktopView {
     padding-inline: var(--sizing-90);
   }

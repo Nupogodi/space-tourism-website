@@ -134,12 +134,16 @@
     font-size: var(--font-size-xs);
   }
 
+  .subHeading2 {
+    font-size: var(--font-size-2xs);
+  }
+
   .navText {
     font-size: var(--font-size-2xs);
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .heading2 {
     font-size: var(--font-size-4xl);
   }

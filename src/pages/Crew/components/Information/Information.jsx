@@ -7,8 +7,7 @@ import { Typography } from 'components';
 // styles
 import styles from './Information.module.css';
 
-export function Information({ role, name, description }) {
-  return (
+export const Information = ({ role, name, description }) => (
     <div className={styles.information}>
       <Typography className={styles.role} tag='p' preset='heading4'>
         {role}
@@ -22,8 +21,7 @@ export function Information({ role, name, description }) {
         </Typography>
       </div>
     </div>
-  );
-}
+  )
 
 Information.propTypes = {
   role: propTypes.string.isRequired,

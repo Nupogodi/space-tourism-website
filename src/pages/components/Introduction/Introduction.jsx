@@ -9,7 +9,7 @@ import styles from "./Introduction.module.css";
 
 export const Introduction = ({ text, prefix }) => (
   <div className={styles.container}>
-    <Typography className={styles.prefix} tag='span' preset='heading5'>
+    <Typography className={styles.prefix} tag='p' preset='heading5'>
       {prefix}
     </Typography>
     <Typography className={styles.text} tag='h1' preset='heading5'>
