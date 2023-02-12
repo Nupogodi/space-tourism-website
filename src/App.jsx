@@ -1,16 +1,16 @@
-import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import classNames from 'classnames/bind';
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import classNames from "classnames/bind";
 
 // constants
-import { ROUTES } from 'utils/constants';
+import { ROUTES } from "utils/constants";
 
 // components
-import { Navbar } from 'components';
+import { Navbar } from "components";
 
 // styles
-import 'assets/styles/main.css';
-import styles from './App.module.css';
+import "assets/styles/main.css";
+import styles from "./App.module.css";
 
 const cx = classNames.bind(styles);
 
@@ -31,7 +31,7 @@ const App = () => {
         <Navbar />
       </header>
       <main className={styles.main}>
-        <div className='container paddedInline fullHeight'>
+        <div className='container paddedInline flexFlow'>
           <Routes>
             {Object.values(ROUTES).map((value) => (
               <Route key={value.url} path={value.url} element={value.element} />

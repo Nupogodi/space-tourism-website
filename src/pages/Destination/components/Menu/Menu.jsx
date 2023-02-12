@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
 // components
-import { Button, Typography } from 'components';
+import { Button, Typography } from "components";
 
-import { DESTINATIONS } from '../../destinations';
+import { DESTINATIONS_ARRAY } from "../../destinationConstants";
 
 // styles
-import styles from './Menu.module.css';
+import styles from "./Menu.module.css";
 
 export const Menu = ({ onClick, activeTabID }) => (
   <nav aria-labelledby='page-navigation'>
     <ul className={styles.menu}>
-      {Object.values(DESTINATIONS).map((destination) => (
+      {DESTINATIONS_ARRAY.map((destination) => (
         <li
           key={destination.id}
           className={`${styles.item} ${
@@ -26,3 +27,8 @@ export const Menu = ({ onClick, activeTabID }) => (
     </ul>
   </nav>
 );
+
+Menu.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  activeTabID: PropTypes.number.isRequired,
+};

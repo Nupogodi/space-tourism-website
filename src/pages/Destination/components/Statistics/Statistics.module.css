@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .statistics {
     justify-content: start;
   }

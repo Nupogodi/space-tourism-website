@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .image {
     max-width: 440px;
   }

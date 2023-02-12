@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 // components
 import { Introduction } from "pages";
-import { Image } from "./components/Image/Image";
+import { Description, Image, Menu } from "./components";
 
 // constants
+import { TECHNOLOGIES } from "./technologyConstants";
 
 // styles
 import styles from "./Technology.module.css";
 
 export function Technology() {
+  const [activeSlide, setActiveSlide] = useState(TECHNOLOGIES.launchVehicle);
+
+  const { title, image, description, id } = activeSlide;
+
   return (
-    <div className={styles.technology}>
+    <div className={`${styles.technology} flexFlow`}>
       <section className={styles.section}>
-        <Introduction text='Space Launch 101' prefix='03' />
-        <Image alt='' src='' />
+        <div className={styles.introduction}>
+          <Introduction text='Space Launch 101' prefix='03' />
+        </div>
+        <div className={styles.description}>
+          <div className={styles.image}>
+            <Image alt={image.alt} src={image.src} />
+          </div>
+          <div className={styles.content}>
+            <div className={styles.menu}>
+              <Menu onClick={setActiveSlide} activeSlideID={id} />
+            </div>
+            <div className={styles.textContainer}>
+              <Description title={title} description={description} />
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

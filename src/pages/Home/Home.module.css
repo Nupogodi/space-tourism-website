@@ -12,3 +12,9 @@
 .container {
   padding-top: var(--page-padding);
 }
+
+@media (min-width: 1300px) {
+  .home {
+    min-height: 100%;
+  }
+}

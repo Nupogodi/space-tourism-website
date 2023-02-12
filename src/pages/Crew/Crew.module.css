@@ -1,8 +1,4 @@
 .crew {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-
   text-align: center;
 }
 
@@ -54,7 +50,7 @@
   }
 
   .image::after {
-    display: none;
+    content: none;
   }
 
   .slider {
@@ -62,7 +58,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .crew {
     text-align: start;
   }

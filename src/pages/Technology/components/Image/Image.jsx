@@ -5,10 +5,18 @@ import PropTypes from "prop-types";
 import styles from "./Image.module.css";
 
 export function Image({ src, alt }) {
-  return <img src={src} alt={alt} />;
+  return (
+    <picture>
+      <source srcSet={src.desktop} media='(min-width: 1300px)' />
+      <img src={src.mobile} alt={alt} />
+    </picture>
+  );
 }
 
 Image.propTypes = {
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  src: PropTypes.shape({
+    mobile: PropTypes.string.isRequired,
+    desktop: PropTypes.string.isRequired,
+  }).isRequired,
 };

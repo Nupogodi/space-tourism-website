@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 // components
-import { Typography } from 'components';
+import { Typography } from "components";
 
-import { DESTINATIONS } from '../../destinations';
+import { DESTINATIONS } from "../../destinationConstants";
 
 // styles
-import styles from './Description.module.css';
+import styles from "./Description.module.css";
 
 export const Description = ({ description, title }) => (
   <section className={styles.description}>

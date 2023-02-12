@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 // constants
-import { ROUTES } from 'utils/constants';
+import { ROUTES } from "utils/constants";
 
 // hooks
-import { useMatchMedia } from 'hooks/';
+import { useMatchMedia } from "hooks/";
 
 // components
 import {
@@ -15,17 +15,17 @@ import {
   Button,
   DesktopView,
   MobileView,
-} from 'components';
+} from "components";
 
 // styles
-import styles from './Navbar.module.css';
+import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const [isTablet, isDesktop] = useMatchMedia([
-    '(min-width: 768px)',
-    '(min-width: 1440px)',
+    "(min-width: 768px)",
+    "(min-width: 1300px)",
   ]);
 
   const toggleMobileDrawer = function () {

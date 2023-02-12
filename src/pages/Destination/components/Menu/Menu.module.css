@@ -20,7 +20,7 @@
   border-color: var(--color-white-400);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .menu {
     justify-content: start;
   }

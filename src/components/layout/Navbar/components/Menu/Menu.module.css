@@ -29,7 +29,7 @@
   background-color: rgb(228 228 228 / 15%);
   box-shadow: 0 10px 15px 10px rgb(0 0 0 / 15%);
 
-  content: '';
+  content: "";
   backdrop-filter: blur(8px); /* Safari 9+ */
 }
 
@@ -74,7 +74,7 @@
   content: counter(menu, decimal-leading-zero);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .desktopView {
     padding-inline: var(--sizing-90);
   }
