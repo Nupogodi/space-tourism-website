@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 // components
 import { Typography } from "components";
 
-import { DESTINATIONS } from "../../destinationConstants";
-
 // styles
 import styles from "./Description.module.css";
 

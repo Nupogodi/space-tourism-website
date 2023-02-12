@@ -1,11 +1,11 @@
-import React, { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from "react";
 
 export const useMatchMedia = (queries, defaultValues = []) => {
   const initialValues = defaultValues.length
     ? defaultValues
     : Array(queries.length).fill(false);
 
-  if (typeof window === 'undefined') return initialValues;
+  if (typeof window === "undefined") return initialValues;
 
   const mediaQueryLists = queries.map((q) => window.matchMedia(q));
 
@@ -31,6 +31,6 @@ export const useMatchMedia = (queries, defaultValues = []) => {
   }, []);
 
   return value;
-}
+};
 
 useMatchMedia.propTypes = {};

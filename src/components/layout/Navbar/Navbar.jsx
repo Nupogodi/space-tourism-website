@@ -28,6 +28,7 @@ export const Navbar = () => {
     "(min-width: 1300px)",
   ]);
 
+  /* eslint-disable-next-line */
   const toggleMobileDrawer = function () {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
@@ -43,6 +44,7 @@ export const Navbar = () => {
       ) : (
         <div>
           <div className={styles.toggleBtn}>
+            {/* eslint-disable-next-line */}
             <Button styled='wrapper' onClick={toggleMobileDrawer}>
               {mobileDrawerOpen ? <Close /> : <Hamburger />}
             </Button>
