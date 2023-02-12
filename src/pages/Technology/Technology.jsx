@@ -10,7 +10,7 @@ import { TECHNOLOGIES } from "./technologyConstants";
 // styles
 import styles from "./Technology.module.css";
 
-export function Technology() {
+export const Technology = () => {
   const [activeSlide, setActiveSlide] = useState(TECHNOLOGIES.launchVehicle);
 
   const { title, image, description, id } = activeSlide;

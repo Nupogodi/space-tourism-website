@@ -7,8 +7,7 @@ import { Typography } from "components";
 // styles
 import styles from "./Description.module.css";
 
-export function Description({ title, description }) {
-  return (
+export const Description = ({ title, description }) => (
     <div className={styles.description}>
       <div className={styles.marginBottom}>
         <Typography preset='subHeading2' tag='p'>
@@ -22,8 +21,7 @@ export function Description({ title, description }) {
         {description}
       </Typography>
     </div>
-  );
-}
+  )
 
 Description.propTypes = {
   title: PropTypes.string.isRequired,

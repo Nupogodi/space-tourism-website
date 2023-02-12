@@ -17,11 +17,11 @@
 }
 
 .home {
-  background-image: url('./assets/images/home/background-home-mobile.jpg');
+  background-image: url("./assets/images/home/background-home-mobile.jpg");
 }
 
 .destination {
-  background-image: url('./assets/images/destination/background-destination-mobile.jpg');
+  background-image: url("./assets/images/destination/background-destination-mobile.jpg");
 }
 
 .crew {
@@ -34,15 +34,15 @@
 
 @media (min-width: 768px) {
   .home {
-    background-image: url('./assets/images/home/background-home-tablet.jpg');
+    background-image: url("./assets/images/home/background-home-tablet.jpg");
   }
 
   .destination {
-    background-image: url('./assets/images/destination/background-destination-tablet.jpg');
+    background-image: url("./assets/images/destination/background-destination-tablet.jpg");
   }
 
   .crew {
-    background-image: url('./assets/images/crew/background-crew-tablet.jpg');
+    background-image: url("./assets/images/crew/background-crew-tablet.jpg");
   }
 
   .technology {
@@ -52,15 +52,15 @@
 
 @media (min-width: 1300px) {
   .home {
-    background-image: url('./assets/images/home/background-home-desktop.jpg');
+    background-image: url("./assets/images/home/background-home-desktop.jpg");
   }
 
   .destination {
-    background-image: url('./assets/images/destination/background-destination-desktop.jpg');
+    background-image: url("./assets/images/destination/background-destination-desktop.jpg");
   }
 
   .crew {
-    background-image: url('./assets/images/crew/background-crew-desktop.jpg');
+    background-image: url("./assets/images/crew/background-crew-desktop.jpg");
   }
 
   .technology {

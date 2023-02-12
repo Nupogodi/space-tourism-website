@@ -10,7 +10,7 @@ import { CREW_MEMBERS } from "./crewConstants";
 // styles
 import styles from "./Crew.module.css";
 
-export function Crew() {
+export const Crew = () => {
   const [activeMember, setActiveMember] = useState(CREW_MEMBERS.mark);
 
   const { name, image, role, description, id } = activeMember;

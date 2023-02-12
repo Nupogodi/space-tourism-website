@@ -10,8 +10,7 @@ import { CREW_MEMBERS_ARRAY } from "pages/Crew/crewConstants";
 // styles
 import styles from "./SliderMenu.module.css";
 
-export function SliderMenu({ onClick, activeMemberID }) {
-  return (
+export const SliderMenu = ({ onClick, activeMemberID }) => (
     <ul className={styles.slider}>
       {CREW_MEMBERS_ARRAY.map((member) => (
         <li className={styles.slide} key={member.id}>
@@ -25,8 +24,7 @@ export function SliderMenu({ onClick, activeMemberID }) {
         </li>
       ))}
     </ul>
-  );
-}
+  )
 
 SliderMenu.propTypes = {
   onClick: propTypes.func.isRequired,

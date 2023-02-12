@@ -4,14 +4,12 @@ import PropTypes from "prop-types";
 // styles
 import styles from "./Image.module.css";
 
-export function Image({ src, alt }) {
-  return (
+export const Image = ({ src, alt }) => (
     <picture>
       <source srcSet={src.desktop} media='(min-width: 1300px)' />
       <img src={src.mobile} alt={alt} />
     </picture>
-  );
-}
+  )
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,

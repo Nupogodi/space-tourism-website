@@ -57,9 +57,10 @@
   }
 
   .image {
-    order: 2;
     margin: 0;
     margin-right: -175px;
+
+    order: 2;
   }
 
   .menu,

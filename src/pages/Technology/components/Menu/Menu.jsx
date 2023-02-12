@@ -9,8 +9,7 @@ import { TECHNOLOGIES_ARRAY } from "../../technologyConstants";
 // styles
 import styles from "./Menu.module.css";
 
-export function Menu({ onClick, activeSlideID }) {
-  return (
+export const Menu = ({ onClick, activeSlideID }) => (
     <div className={styles.container}>
       <ul className={styles.menu}>
         {TECHNOLOGIES_ARRAY.map((technology, index) => {
@@ -30,8 +29,7 @@ export function Menu({ onClick, activeSlideID }) {
         })}
       </ul>
     </div>
-  );
-}
+  )
 
 Menu.propTypes = {
   onClick: PropTypes.func.isRequired,
